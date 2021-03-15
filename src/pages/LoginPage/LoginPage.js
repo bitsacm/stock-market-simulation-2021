@@ -16,9 +16,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     padding: "30px"
   },
-  bgContainer: {
-    backgroundImage: `url(${Image})`,
-    backgroundSize: "cover"
+  image: {
+    paddingTop: "30px"
   },
   bluePaper: {
     backgroundColor: "#373C56",
@@ -63,8 +62,8 @@ export default function LoginPage() {
   const classes = useStyles();
   return (
     <Container className={classes.root}>
-      <img src={acm} alt="ACM Logo" />
-      <img src={apogee} alt="Apogee Logo" />
+      <img src={acm} alt="ACM Logo" className={classes.image} />
+      <img src={apogee} alt="Apogee Logo" className={classes.image} />
       <center>
         <p className={classes.sms}>
           <b>STOCK MARKET SIMULATION</b>
