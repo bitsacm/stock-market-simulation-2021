@@ -4,9 +4,10 @@ import TextField from "@material-ui/core/TextField";
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 import Box from "@material-ui/core/Box";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Image from "./bg.jpg";
 import { makeStyles } from "@material-ui/core/styles";
+import acm from "./acm.png";
+import apogee from "./apogee.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,6 +50,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#FFFFFF",
     borderRadius: 6,
     marginTop: "-10px"
+  },
+  sms: {
+    fontStyle: "RelishPro",
+    fontWeight: 400,
+    color: "white",
+    fontSize: "28px"
   }
 }));
 
@@ -56,7 +63,13 @@ export default function LoginPage() {
   const classes = useStyles();
   return (
     <Container className={classes.root}>
-      <CssBaseline />
+      <img src={acm} alt="ACM Logo" />
+      <img src={apogee} alt="Apogee Logo" />
+      <center>
+        <p className={classes.sms}>
+          <b>STOCK MARKET SIMULATION</b>
+        </p>
+      </center>
       <Paper elevation={3} className={classes.bluePaper}>
         <form noValidate>
           <Box m={3}>
