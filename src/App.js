@@ -8,13 +8,12 @@ import NewsPage from "./pages/NewsPage/NewsPage";
 function App() {
   return (
     <div className="App">
-      <p>Welcome to Stock Market Simulation 2021</p>
       <BrowserRouter>
         <Switch>
-          <Route path="/login"  component={LoginPage} />
-          <Route path="/leaderboard"  component={Leaderboard} />
-          <Route path="/dashboard"  component={Dashboard} />
-          <Route path="/news"  component={NewsPage} />
+          <Route path="/login" component={LoginPage} />
+          <Route path="/leaderboard" component={Leaderboard} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/news" component={NewsPage} />
         </Switch>
       </BrowserRouter>
     </div>
