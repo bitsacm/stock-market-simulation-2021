@@ -4,9 +4,21 @@ import TextField from "@material-ui/core/TextField";
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 import Box from "@material-ui/core/Box";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Image from "./bg.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    height: "100vh",
+    backgroundImage: `url(${Image})`,
+    backgroundSize: "cover",
+    padding: "30px"
+  },
+  bgContainer: {
+    backgroundImage: `url(${Image})`,
+    backgroundSize: "cover"
+  },
   bluePaper: {
     backgroundColor: "#373C56",
     borderRadius: 5
@@ -23,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   loginMail: {
     marginTop: "35px",
-    marginBottom: "40px",
+    marginBottom: "30px",
     variant: "contained",
     backgroundColor: "white",
     borderRadius: 6
@@ -31,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   textField1: {
     backgroundColor: "#FFFFFF",
     borderRadius: 6,
-    marginTop: "40px"
+    marginTop: "30px"
   },
   textField2: {
     backgroundColor: "#FFFFFF",
@@ -43,7 +55,8 @@ const useStyles = makeStyles((theme) => ({
 export default function LoginPage() {
   const classes = useStyles();
   return (
-    <Container>
+    <Container className={classes.root}>
+      <CssBaseline />
       <Paper elevation={3} className={classes.bluePaper}>
         <form noValidate>
           <Box m={3}>
