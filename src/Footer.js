@@ -41,7 +41,7 @@ export default function Footer() {
           icon={<TimerIcon />}
           className={classes.icons}
           component={Link}
-          to="/login"
+          to="/watchlist"
         />
         <BottomNavigationAction
           label="News"
@@ -65,7 +65,7 @@ export default function Footer() {
           icon={<ImportExportOutlinedIcon />}
           className={classes.icons}
           component={Link}
-          to="/toChange"
+          to="/transactions"
         />
         <BottomNavigationAction
           label="Profile"
