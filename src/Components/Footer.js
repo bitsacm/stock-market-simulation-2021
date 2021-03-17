@@ -5,7 +5,7 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import ImportExportOutlinedIcon from "@material-ui/icons/ImportExportOutlined";
 import TimerIcon from "@material-ui/icons/Timer";
 import DescriptionOutlinedIcon from "@material-ui/icons/DescriptionOutlined";
-import EmojiEventsOutlinedIcon from "@material-ui/icons/EmojiEventsOutlined";
+import EqualizerIcon from "@material-ui/icons/Equalizer";
 import PersonOutlineOutlinedIcon from "@material-ui/icons/PersonOutlineOutlined";
 import { Link } from "react-router-dom";
 
@@ -54,7 +54,7 @@ export default function Footer() {
         <BottomNavigationAction
           label="Leaderboard"
           value="leaderboard"
-          icon={<EmojiEventsOutlinedIcon />}
+          icon={<EqualizerIcon />}
           className={classes.icons}
           component={Link}
           to="/leaderboard"
