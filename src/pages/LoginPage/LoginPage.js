@@ -14,8 +14,8 @@ const styles = (theme) => ({
   root: {
     height: "100vh",
     backgroundImage: `url(${Image})`,
-    backgroundSize: "cover",
-    padding: "30px"
+    backgroundSize: "100% 100%",
+    backgroundRepeat: "no-repeat"
   },
   image: {
     paddingTop: "30px"
@@ -32,10 +32,10 @@ const styles = (theme) => ({
     borderRadius: 6,
     fontSize: "16px",
     color: "white",
-    marginTop: "10px"
+    marginTop: "6px"
   },
   loginMail: {
-    marginTop: "35px",
+    marginTop: "6px",
     marginBottom: "30px",
     variant: "contained",
     backgroundColor: "white",
