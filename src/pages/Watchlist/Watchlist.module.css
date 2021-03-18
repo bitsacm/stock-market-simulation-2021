@@ -1,0 +1,332 @@
+.App{
+    background: #E5E5E5;
+    height: 100vh;
+  }
+  .input{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: -webkit-fill-available;
+    height: 40px;
+    border-radius: 99px;
+    background-color: lightgrey;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  .header {
+    display: flex;
+    background-color: #08415c;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-bottom: 1px solid lightgrey;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url('rectangle.svg');
+  }
+  
+  
+  .portfolio {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+  }
+  
+  .userInfo {
+    height: 83px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 128.91%;
+  }
+  
+  .email {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 128.91%;
+    /* or 18px */
+  
+    display: flex;
+    align-items: center;
+  
+    /* Text Color */
+  
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+  }
+  
+  .financeInfo {
+    display: flex;
+  }
+  
+  .information {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 4px;
+  }
+  .columns {
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-top: 18px;
+    width: 100%;
+  }
+  .subHeading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 128.91%;
+  }
+  
+  .value {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 128.91%;
+  }
+  
+  .profitCard {
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    width: 144px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lossCard {
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    width: 144px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: bottom 12px;
+    margin-top: 30px;
+  }
+  
+  .profitContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .profitHeading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 128.91%;
+    /* identical to box height, or 21px */
+    color: #3ec300;
+  }
+  
+  .lossHeading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 128.91%;
+    /* identical to box height, or 21px */
+  
+    color: #d64933;
+  }
+  
+  .profitValue {
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 128.91%;
+    /* or 15px */
+  
+    color: #000000;
+  }
+  
+  .portfolioCard {
+    margin-top: 15px;
+    background: #ffffff;
+    border-radius: 2px;
+    padding: 10px;
+    border-bottom: 1px solid #EFEFEF;
+  }
+  
+  .stocksPortfolio {
+    display: flex;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    padding-bottom: 16px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 16px;
+    height: 70vh;
+    overflow: scroll;
+  }
+  
+  .firstDiv {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .secondDiv {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .thirdDiv {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 4px;
+  }
+  
+  .companyName {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  
+  .industryName {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  
+    color: #000000;
+  }
+  
+  .percentage {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  
+    color: #000000;
+  }
+  
+  .buyPrice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .buy {
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 12px;
+    /* line-height: 14px; */
+    /* display: flex; */
+    text-align: center;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: lightseagreen;
+    padding: 2px;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  
+  .boughtPrice {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+  
+    color: #474747;
+  }
+  
+  .buyQty {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+  
+    color: #474747;
+  }
+  
+  .heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+
+  .topWinners{
+    font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #08415C;
+  }
+
+  .sort{
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+margin-right: 5px;
+color: #08415C;
+  }
+
+  .drop{
+    display: flex;
+  }
+
+  .select{
+    border: none;
+    background-color: #e5e5e5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    margin-right: 5px;
+    color: #08415C;
+  }
