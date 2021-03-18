@@ -9258,6 +9258,11 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
+react-filter-search@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/react-filter-search/-/react-filter-search-1.0.11.tgz#8f38d968c56ca55431bd1353f02a137276181ec1"
+  integrity sha512-iHTUToEyUYbXqb/hNn8KM4zo0NtbGamEKuBJc0kvnXyJZBCUbkD9TQW+DaeA3wwV0sRZ0r64MXIEHJWHPw+Omw==
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"

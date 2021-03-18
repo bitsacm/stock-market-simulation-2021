@@ -24,7 +24,7 @@ class PortfolioPage extends Component {
             <p>Portfolio</p>
           </div>
           <div>
-            <img src="setting.png" />
+            <img src="./info.png" />
           </div>
         </div>
         <div className={styles.userInfo}>

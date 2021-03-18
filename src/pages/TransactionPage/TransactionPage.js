@@ -17,7 +17,7 @@ class TransactionPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.App}>
         <div className={styles.header}>
           {" "}
           <div className={styles.portfolio}>

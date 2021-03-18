@@ -5,6 +5,7 @@ import Leaderboard from "./pages/Leaderboard/Leaderboard";
 import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
 import NewsPage from "./pages/NewsPage/NewsPage";
 import TransactionPage from "./pages/TransactionPage/TransactionPage";
+import Watchlist from "./pages/Watchlist/Watchlist";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/portfolio"  component={PortfolioPage} />
           <Route path="/news"  component={NewsPage} />
           <Route path="/transactions" component={TransactionPage}/>
+          <Route path="/watchlist" component={Watchlist}/>
         </Switch>
       </BrowserRouter>
     </div>
