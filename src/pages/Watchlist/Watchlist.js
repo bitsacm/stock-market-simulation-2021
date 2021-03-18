@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import styles from "./Watchlist.module.css";
 import SearchResults from "react-filter-search";
+import Footer from "../../Components/Footer.js";
 
 class Watchlist extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: [],
-      value: "",
+      value: ""
     };
   }
 
@@ -28,15 +29,15 @@ class Watchlist extends Component {
     if (event.target.value === "alphabetically") {
       this.setState({
         data: this.state.data.sort((a, b) => a.name.localeCompare(b.name))
-      })
+      });
     }
 
     if (event.target.value === "gain") {
       this.setState({
         data: this.state.data.sort((a, b) => a.gain - b.gain)
-      })
+      });
     }
-  }
+  };
 
   render() {
     const { data, value } = this.state;
@@ -92,6 +93,7 @@ class Watchlist extends Component {
             </div>
           )}
         />
+        <Footer />
       </div>
     );
   }

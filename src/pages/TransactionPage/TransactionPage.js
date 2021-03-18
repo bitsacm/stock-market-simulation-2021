@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import styles from "./TransactionPage.module.css";
 import axios from "axios";
+import Footer from "../../Components/Footer.js";
 
 class TransactionPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: [],
+      users: []
     };
   }
 
@@ -123,6 +124,7 @@ class TransactionPage extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

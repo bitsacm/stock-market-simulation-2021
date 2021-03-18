@@ -156,9 +156,9 @@
   color: #000000;
 }
 
-.portfolioCard{
+.portfolioCard {
   margin-top: 10px;
-  border-bottom: 1px solid #035C7D ;
+  border-bottom: 1px solid #035c7d;
   padding-bottom: 10px;
 }
 
@@ -168,7 +168,7 @@
   padding-left: 20px;
   padding-right: 20px;
   flex-direction: column;
-  padding-bottom: 16px;
+  padding-bottom: 16%;
   overflow: scroll;
   height: 40vh;
 }
@@ -234,31 +234,29 @@
   /* display: flex; */
   text-align: center;
   border-radius: 4px;
-  color: #08415C;
+  color: #08415c;
   background-color: #e5e5e5;
   padding: 2px;
   font-weight: bold;
   margin-right: 4px;
 }
 
-.boughtPrice{
+.boughtPrice {
   font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-/* identical to box height */
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
 
-
-color: #474747;
+  color: #474747;
 }
 
-.buyQty{
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 14px;
-/* identical to box height */
+.buyQty {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
 
-
-color: #474747;
+  color: #474747;
 }

@@ -1,8 +1,9 @@
 .header {
-    height: 64px;
-    background-color: #031A6E;
-  }
-  
+  height: 64px;
+  width: 100%;
+  background-color: #031a6e;
+}
+
 .news {
   position: absolute;
   width: 60px;
@@ -17,22 +18,25 @@
   line-height: 28px;
   letter-spacing: 0px;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-  
+
 .leaderboard {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   text-align: left;
 }
 
 .outer {
-  padding: 4.4%;
+  padding-left: 4.4%;
+  padding-right: 4.4%;
+  padding-top: 4.4%;
+  padding-bottom: 20%;
 }
 
 .table {
   border-radius: 8px;
-  padding: 10px;
-  background-color: #FFFFFF;
+  padding: 6px;
+  background-color: #ffffff;
 }
 
 .articleTitle {
@@ -42,7 +46,7 @@
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0px;
-  text-align: left;  
+  text-align: left;
 }
 
 .articleTime {
