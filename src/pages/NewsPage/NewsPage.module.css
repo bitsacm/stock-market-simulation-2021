@@ -1,0 +1,56 @@
+.header {
+    height: 64px;
+    background-color: #031A6E;
+  }
+  
+.news {
+  position: absolute;
+  width: 60px;
+  height: 28px;
+  left: 18px;
+  top: -5px;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+}
+  
+.leaderboard {
+  background-color: #E5E5E5;
+  text-align: left;
+}
+
+.outer {
+  padding: 4.4%;
+}
+
+.table {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+
+.articleTitle {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;  
+}
+
+.articleTime {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+}
