@@ -1,0 +1,21 @@
+.box_vis {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 75%;
+  height: 60%;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: #08415c;
+  border-radius: 6px;
+  color: white;
+}
+
+.box_hid {
+  display: none;
+}
