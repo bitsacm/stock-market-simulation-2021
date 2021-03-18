@@ -16,10 +16,27 @@ class Watchlist extends Component {
       .then((response) => response.json())
       .then((json) => this.setState({ data: json }));
   }
+
   handleChange = (event) => {
     const { value } = event.target;
     this.setState({ value });
   };
+
+  handleSort = (event) => {
+    console.log(event.target.value);
+
+    if (event.target.value === "alphabetically") {
+      this.setState({
+        data: this.state.data.sort((a, b) => a.name.localeCompare(b.name))
+      })
+    }
+
+    if (event.target.value === "gain") {
+      this.setState({
+        data: this.state.data.sort((a, b) => a.gain - b.gain)
+      })
+    }
+  }
 
   render() {
     const { data, value } = this.state;
@@ -42,7 +59,8 @@ class Watchlist extends Component {
           <div className={styles.topWinners}>Top Winners</div>
           <div className={styles.drop}>
             <p className={styles.sort}>Sort by:</p>
-            <select className={styles.select}>
+            <select className={styles.select} onChange={this.handleSort}>
+              <option value="default">Select Option</option>
               <option value="alphabetically">Alphabetically</option>
               <option value="gain">Top Gainers</option>
             </select>
@@ -54,7 +72,7 @@ class Watchlist extends Component {
           renderResults={(results) => (
             <div className={styles.stocksPortfolio}>
               {results.sort().map((el) => (
-                <div className={styles.portfolioCard}>
+                <div className={styles.portfolioCard} key={el.name}>
                   <div className={styles.firstDiv}>
                     <div className={styles.companyName}>{el.name}</div>
                   </div>
