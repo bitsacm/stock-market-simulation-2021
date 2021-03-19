@@ -73,7 +73,7 @@ export default function Footer() {
           icon={<PersonOutlineOutlinedIcon />}
           className={classes.icons}
           component={Link}
-          to="/dashboard"
+          to="/portfolio"
         />
       </BottomNavigation>
     </div>

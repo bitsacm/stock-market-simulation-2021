@@ -1,0 +1,38 @@
+.leaderboard {
+    text-align: left;
+    margin-top: -20px;
+    height: 110vh;
+  }
+  
+  .leaderboardTitle {
+    width: 103px;
+    height: 21px;
+    margin-left: 18px;
+    padding-top: 18px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    /* identical to box height */
+    color: #08415c;
+  }
+  .table {
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .outer {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    padding-bottom: 20%;
+    background-color: #e5e5e5;
+  }
+  
+  .cell {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
