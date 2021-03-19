@@ -1,0 +1,63 @@
+.root {
+    height: 100vh;
+    background-image: url("Background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .acm {
+    position: absolute;
+    top: 16.72%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .apogee {
+    position: absolute;
+    top: 26.87%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .sms {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .login {
+    position: absolute;
+    left: 4%;
+    top: -2%;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 100%;
+    /* or 18px */
+    color: #ffffff;
+  }
+  
+  .button {
+    position: absolute;
+    width: 260px;
+    height: 48px;
+    top: 59.375%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #035c7d;
+    box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+  
+  .google {
+    position: absolute;
+    top: 23.375%;
+    right: 5%;
+  }
+  
+  .sponsor {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 86.09%;
+  }

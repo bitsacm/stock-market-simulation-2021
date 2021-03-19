@@ -1,52 +1,59 @@
 .header {
-    height: 64px;
-    background-color: #031A6E;
-  }
-  
+  display: flex;
+  background-color: #08415c;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-bottom: 1px solid lightgrey;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("rectangle.svg");
+}
+
 .news {
   position: absolute;
   width: 60px;
   height: 28px;
   left: 18px;
   top: -5px;
-
-  font-family: Roboto;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 0px;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-  
+
 .leaderboard {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   text-align: left;
 }
 
 .outer {
-  padding: 4.4%;
+  padding-left: 4.4%;
+  padding-right: 4.4%;
+  padding-top: 4.4%;
+  padding-bottom: 20%;
 }
 
 .table {
   border-radius: 8px;
-  padding: 10px;
-  background-color: #FFFFFF;
+  padding: 6px;
+  background-color: #ffffff;
 }
 
 .articleTitle {
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0px;
-  text-align: left;  
+  text-align: left;
 }
 
 .articleTime {
-  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
