@@ -3,13 +3,21 @@ import styles from "./PortfolioPage.module.css";
 import axios from "axios";
 import Footer from "../../Components/Footer.js";
 import Instructions from "../../Components/Instructions.js";
+import { Redirect } from "react-router-dom";
+import { withCookies, Cookies } from 'react-cookie';
+import { instanceOf } from 'prop-types';
 
 class PortfolioPage extends Component {
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired
+  };
   constructor(props) {
     super(props);
+    const { cookies } = props;
     this.state = {
       users: [],
-      modalVisible: false
+      modalVisible: false,
+      loggedIn: cookies.get('jwt') ? true : false
     };
   }
 
@@ -25,6 +33,9 @@ class PortfolioPage extends Component {
   }
 
   render() {
+    if (!this.state.loggedIn) {
+      return <Redirect to={"/login"} />
+    } else {
     return (
       <div>
         <Instructions
@@ -157,5 +168,6 @@ class PortfolioPage extends Component {
     );
   }
 }
+}
 
-export default PortfolioPage;
+export default withCookies(PortfolioPage);

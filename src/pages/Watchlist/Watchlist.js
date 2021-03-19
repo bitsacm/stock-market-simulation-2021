@@ -2,13 +2,21 @@ import React, { Component } from "react";
 import styles from "./Watchlist.module.css";
 import SearchResults from "react-filter-search";
 import Footer from "../../Components/Footer.js";
+import { Redirect } from "react-router-dom";
+import { withCookies, Cookies } from 'react-cookie';
+import { instanceOf } from 'prop-types';
 
 class Watchlist extends Component {
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired
+  };
   constructor(props) {
     super(props);
+    const { cookies } = props;
     this.state = {
       data: [],
-      value: ""
+      value: "",
+      loggedIn: cookies.get('jwt') ? true : false
     };
   }
 
@@ -41,7 +49,9 @@ class Watchlist extends Component {
 
   render() {
     const { data, value } = this.state;
-
+    if (!this.state.loggedIn) {
+      return <Redirect to={"/login"} />
+    } else {
     return (
       <div className={styles.App}>
         <div className={styles.header}>
@@ -98,5 +108,6 @@ class Watchlist extends Component {
     );
   }
 }
+}
 
-export default Watchlist;
+export default withCookies(Watchlist);
