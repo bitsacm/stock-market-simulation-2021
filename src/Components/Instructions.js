@@ -6,13 +6,7 @@ import { Modal } from "shards-react";
 class Instructions extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      visible: this.props.visible
-    };
-  }
-
-  changeVisibilty() {
-    this.setState({ visible: !this.state.visible });
+    this.state = {};
   }
 
   render() {
