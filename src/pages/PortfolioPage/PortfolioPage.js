@@ -2,14 +2,22 @@ import React, { Component } from "react";
 import styles from "./PortfolioPage.module.css";
 import axios from "axios";
 import Footer from "../../Components/Footer.js";
+import Instructions from "../../Components/Instructions.js";
 
 class PortfolioPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: []
+      users: [],
+      modalVisible: false
     };
   }
+
+  toggleModal = () => {
+    this.setState({
+      modalVisible: !this.state.modalVisible
+    });
+  };
 
   async componentDidMount() {
     const { data } = await axios("https://jsonplaceholder.typicode.com/users");
@@ -19,18 +27,22 @@ class PortfolioPage extends Component {
   render() {
     return (
       <div>
+        <Instructions
+          modalVisible={this.state.modalVisible}
+          toggleModal={this.toggleModal}
+        />
         <div className={styles.header}>
           {" "}
           <div className={styles.portfolio}>
             <p>Portfolio</p>
           </div>
-          <div>
-            <img src="./info.png" />
+          <div onClick={this.toggleModal}>
+            <img src="./info.png" alt="info" />
           </div>
         </div>
         <div className={styles.userInfo}>
           <div className={styles.picture}>
-            <img src="./dp.png" />
+            <img src="./dp.png" alt="png" />
           </div>
           <div className={styles.info}>
             <div className={styles.name}>Sam L Jackson</div>

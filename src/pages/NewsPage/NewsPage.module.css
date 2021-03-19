@@ -1,7 +1,14 @@
 .header {
+  display: flex;
+  background-color: #08415c;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
   height: 64px;
-  width: 100%;
-  background-color: #031a6e;
+  border-bottom: 1px solid lightgrey;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("rectangle.svg");
 }
 
 .news {
@@ -10,8 +17,6 @@
   height: 28px;
   left: 18px;
   top: -5px;
-
-  font-family: Roboto;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -40,7 +45,6 @@
 }
 
 .articleTitle {
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -50,7 +54,6 @@
 }
 
 .articleTime {
-  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
