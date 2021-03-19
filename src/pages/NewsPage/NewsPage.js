@@ -3,12 +3,20 @@ import styles from "./NewsPage.module.css";
 import axios from "axios";
 import { Card, CardContent, CardMedia, List } from "@material-ui/core";
 import Footer from "../../Components/Footer.js";
+import { Redirect } from "react-router-dom";
+import { withCookies, Cookies } from 'react-cookie';
+import { instanceOf } from 'prop-types';
 
 class NewsPage extends Component {
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired
+  };
   constructor(props) {
     super(props);
+    const { cookies } = props;
     this.state = {
-      articles: []
+      articles: [],
+      loggedIn: cookies.get('jwt') ? true : false
     };
   }
 
@@ -20,6 +28,9 @@ class NewsPage extends Component {
   }
 
   render() {
+    if (!this.state.loggedIn) {
+      return <Redirect to={"/login"} />
+    } else {
     return (
       <div>
         <div className={styles.header}>
@@ -57,6 +68,7 @@ class NewsPage extends Component {
       </div>
     );
   }
+  }
 }
 
-export default NewsPage;
+export default withCookies(NewsPage);

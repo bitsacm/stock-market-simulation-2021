@@ -9,6 +9,9 @@ import styles from "./LoginPage.module.css";
 
 class LoginPage extends Component {
   render() {
+    const redirect = () => {
+      window.location.href = window.location.origin + "/auth/google"
+    }
     return (
       <div
         style={{ backgroundImage: `url(${background})` }}
@@ -17,7 +20,8 @@ class LoginPage extends Component {
         <img src={acm} alt="ACM Logo" className={styles.acm} />
         <img src={apogee} alt="Apogee Logo" className={styles.apogee} />
         <img src={sms} alt="Stock Market Simulation" className={styles.sms} />
-        <div className={styles.button}>
+        <div className={styles.button} onClick={redirect}
+        >
           <p className={styles.login}> Login Using Gmail</p>
           <svg
             className={styles.google}
